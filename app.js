@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 //llamado al puerto
 PORT = 3030;
-app.listen(PORT, ()=>console.log("Servidor escuchando en el puerto " + PORT))
+app.listen(PORT, ()=>console.log("Servidor corriendo en el puerto " + PORT))
 
 
 //llamado al home
