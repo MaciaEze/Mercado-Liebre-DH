@@ -40,7 +40,7 @@ form.register {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 180px;
+    padding-top: 250px;
     padding-bottom: 50px;
     border-radius: 9px;
     background-color: var(--yellow);
@@ -209,7 +209,11 @@ header nav.link{
     display: none;
 }
 
-header .form .input{
+header div .form{
+    width: 280px;
+}
+
+header div .form .input{
     width: 100%;
     height: 36px;
     background-color: #FFF;
@@ -235,6 +239,8 @@ header .form .input{
 }
 
 header .form .submit{
+    background-color: #FFF;
+    border-radius: 0.5em;
     position: absolute;
     color: #666;
     width: 30px;
@@ -436,6 +442,9 @@ h3,
         visibility: visible;
     }
 
+    form.register {
+        padding-top: 200px;
+    }
 
 
     .card{
@@ -515,6 +524,9 @@ h3,
         margin: auto;
     }
 
+    form.register {
+        padding-top: 120px;
+    }
 
     .footer-data i {
         color: var(--light-blue);
