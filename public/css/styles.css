@@ -134,7 +134,7 @@ form.register h3{
     }
 
     .primary:hover {
-    background-color: var(--light-blue);
+    background-color: #0022AA;
     color: var(--light-gray);
     }
 
@@ -417,6 +417,9 @@ h3,
     padding: 15px 0;
   }
 
+  .footer-data i:hover{
+    color: var(--green);
+  }
 
 /*** MEDIA QUERIES ***/
 
