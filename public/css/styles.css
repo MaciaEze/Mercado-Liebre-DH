@@ -44,7 +44,7 @@ form.register {
     padding-bottom: 50px;
     border-radius: 9px;
     background-color: var(--yellow);
-    width: 400px;
+    width: 300px;
 }
 
 form.register h3{
@@ -52,7 +52,7 @@ form.register h3{
 }
 
 .form-group input{
-    width: 100%;
+    width: 80%;
     height: 36px;
     background-color: #FFF;
     border: none;
@@ -68,7 +68,7 @@ form.register h3{
 
 .form-group,
 .form-group-rc{
-    width: 300px;
+    width: 290px;
     display: flex;
     flex-direction: column;
 }
@@ -80,7 +80,7 @@ form.register h3{
 /*inicio foto*/
 
 .form-group-photo {
-    width: 300px;
+    width: 280px;
     position: relative;
     display: inline-block;
   }
