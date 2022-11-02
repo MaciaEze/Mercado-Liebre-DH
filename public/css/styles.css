@@ -461,7 +461,7 @@ h3,
 
     .card:hover i{
 
-        transform: rotate(-90deg);
+        transform: rotate(-45deg);
 
     }
 
