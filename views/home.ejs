@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include('partials/head.ejs') %>
+
+    <body>
+        <header>
+            <div class="top-header">
+                <div class="logo-and-form">
+                    <div class="logo"> 
+                        <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                    </div>
+                </div>
+                <div class="form" action="#" method="GET">
+                    <input type="text" class="input" placeholder="Buscar productos, marcas y más">
+                    <div class="submit"><i class="fa fa-search"></i></div>
+                </div>
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <nav class="link">
+                <ul>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+
+        <div class="burger-container">
+         <a class="burguer-menu" href="#"><i class="fa fa-bars burger"></i></a>
+        </div>
+        </header>
+
+        <section class="banner">
+            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+        </section>
+        
+        <main class="container">
+            <section class="last-visit">
+                <h3 class="title">Basado en tu última visita</h3>
+                <div class="products">
+
+                    <% productos.forEach(producto =>{ %>
+                    
+                    <article class="card">
+                        <a href="/productDetail/<%= producto.id %>"></a>
+                        <img src="<%= producto.img %>" alt="Cafetera" class="product_img">
+                            <div class="main-article">
+                                <i class="fas fa-truck"></i>
+                                <p class="price"><%= producto.precio %></p>
+                                <p class="discount"><%= producto.descuento %></p>
+                                <h4 class="description"><%= producto.nombre %></h4>
+                            </div>
+                        </a>
+                    </article>
+
+                    <%})%>
+
+                </div>
+            </div>
+            </section>
+            <section class="offers">
+                <h3>Ofertas</h3>
+                <div class="products">
+
+                    <% productos.forEach(producto =>{ %>
+                    
+                    <article class="card">
+                        <a href="/productDetail/<%= producto.id %>"></a>
+                        <img src="<%= producto.img %>" alt="Cafetera" class="product_img">
+                            <div class="main-article">
+                                <i class="fas fa-truck"></i>
+                                <p class="price"><%= producto.precio %></p>
+                                <p class="discount"><%= producto.descuento %></p>
+                                <h4 class="description"><%= producto.nombre %></h4>
+                            </div>
+                        </a>
+                    </article>
+
+                    <%})%>
+
+                </div>  
+            </section>
+        </main>
+
+            <footer class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <article class="footer-data">
+                                <i class="fas fa-credit-card"></i>
+                                <h2>Pagá con tarjeta o en efectivo</h2>
+                                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre
+                                    es seguro!</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <article class="footer-data">
+                                <i class="fas fa-gift"></i>
+                                <h2>Envío gratis desde $ 2.500</h2>
+                                <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio
+                                    de Mercado Puntos.</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <article class="footer-data">
+                                <i class="fas fa-user-shield"></i>
+                                <h2>Seguridad, de principio a fin</h2>
+                                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                                    protegido.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            <div class="sub-footer">
+                <div class="container">
+                    <p>Copyright &copy; Digital House Alumno 1999-2022 MercadoLiebre S.R.L.</p>
+                </div>
+            </div>
+        
+    </body>
+</html>
