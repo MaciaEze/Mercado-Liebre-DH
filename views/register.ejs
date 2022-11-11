@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include('partials/head.ejs') %>
+
+    <body>
+
+        <%- include('partials/header.ejs') %>
+
+        <main>
+
+            <form action="/" method="" class="register" >
+
+                <h3>Registrarse</h3>
+
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Nombre y apellido" minlength="4" required >
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Nombre de usuario" minlength="4" required >
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date"> Fecha de nacimiento </label>
+                    <input type="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Domicilio" minlength="4" required >
+                </div>
+                
+                <div class="form-group-rc">
+                    <label for="term"> Perfil de usuario </label>
+                    <div>
+                        <input type="radio" name="term" value="buy" required>
+                        <label for="buy">Comprador</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="term" value="sell" required>
+                        <label for="sell">Vendedor</label>
+                    </div>
+                </div>
+
+                <div class="form-group-rc">
+                    <label for="hobbies"> Intereses </label>
+                    <div>
+                        <input type="checkbox" name="hobbies" value="1">
+                        <label for="1">Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobbies" value="2">
+                        <label for="2">Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobbies" value="3">
+                        <label for="3">Hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobbies" value="4">
+                        <label for="4">Jugueteria</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobbies" value="4">
+                        <label for="5">Vida Sana</label>
+                    </div>
+                </div>
+
+                <div class="form-group-photo" id="img">
+                    <input type="file" name="img" accept="image/*" >
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="pass" minlength="6" maxlength="10" required placeholder="Contraseña">
+                </div>
+
+                <button type="submit" class="primary"> Enviar </button>
+
+            </form>
+        </main>
+
+        <%- include('partials/footer.ejs') %>
+    
+</body>
+</html>

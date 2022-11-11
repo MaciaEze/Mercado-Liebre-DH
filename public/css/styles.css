@@ -350,6 +350,7 @@ p.price{
     font-size: 18px;
     display: inline-block;
     margin-left: 12px;
+    color: black;
 }
 
 p.discount{

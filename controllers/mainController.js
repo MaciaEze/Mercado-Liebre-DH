@@ -38,11 +38,11 @@ const mainController = {
     },
 
     register:(req, res) => {
-        res.sendFile(path.resolve('./views/register.html'))
+        res.render('register',{productos})
     },
 
     login:(req, res) => {
-        res.sendFile(path.resolve('./views/login.html'))
+        res.render('login',{productos})
     },
 }
 
